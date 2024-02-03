@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Paul Yao | Personal Website</title>
+    <link rel="icon" href="/asset/logo.jpg" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- 你的自定義CSS樣式表可以在這裡引入 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+    <!-- 導覽欄 -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container-fluid p-0 pt-2 position-relative">
+            <!-- 左上logo圖 -->
+            <a class="position-absolute sticky-top" href="#">
+                <img src="./asset/logo.jpg" class="img-fluid" alt="About" width="50" height="50">
+            </a>
+
+            <!-- 右上深淺模式按鈕 -->
+            <!-- <button id="darkModeToggle" class="darkModeBtn position-absolute end-0">
+                Toggle
+            </button> -->
+
+
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- collapse navbar-collapse text-center -->
+            <div class="collapse navbar-collapse text-center" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mr-2 ml-2">
+                        <a class="nav-link" href="#about">關於我</a>
+                    </li>
+                    <li class="nav-item mr-2 ml-2">
+                        <a class="nav-link" href="#skills">技能</a>
+                    </li>
+                    <li class="nav-item mr-2 ml-2">
+                        <a class="nav-link" href="#projects">專案</a>
+                    </li>
+                    <li class="nav-item mr-2 ml-2">
+                        <a class="nav-link" href="#contact">聯絡我</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="content-wrap">
+        <!-- 首頁部分 -->
+        <section id="home" class="">
+            <div class="container mt-5 d-flex justify-content-center">
+                <div class="position-relative d-flex" style="width: 80%;">
+                    <!-- 左側個人簡介 -->
+                    <div class="portfolio text-start">
+                        <h1 class="section-heading" style="font-size:xxx-large;">
+                            Paul Yao
+                        </h1>
+                        <h2 class="pt-3" style="font-size:xx-large;">資訊管理學系學生</h2>
+                        <p class="pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis eius vel,
+                            illum corrupti esse voluptatem dicta magnam, voluptatibus dolore voluptate id nulla, ut
+                            dignissimos! Quidem beatae autem tenetur. Repellendus, vero.</p>
+                    </div>
+
+                    <!-- 右側圖片 -->
+                    <div class="portfolio-picture">
+                        <img src="./asset/logo.jpg" alt="Portfolio Picture" class="pt-1"
+                            style="max-width: 100%; max-height: 100%;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 關於我 -->
+        <section id="about" class="pt-5">
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="topic section-heading text-center">關於我</h2>
+                        <p class="text-center pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+                            provident,
+                            dolorem soluta repudiandae modi repellat aperiam, nulla praesentium, in amet blanditiis
+                            deserunt? Iure corporis fugiat pariatur culpa consectetur voluptate voluptas!</p>
+                    </div>
+                    <!-- 可以加入圖片或其他相關內容 -->
+                    <div class="col-lg-6">
+                        <!-- <img class="img-fluid rounded" src="your-image.jpg" alt="Your Image"> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技能 -->
+        <section id="skills" class="pt-5">
+            <div class="container">
+                <h2 class="topic text-center">技能</h2>
+                <p class="text-center pt-3">列舉你的技能，可以使用進度條或其他方式顯示技能水平。</p>
+
+                <!-- 進度條 -->
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" style="width: 60%; background-color: chocolate;"
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">JAVA</div>
+                </div>
+
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" style="width: 30%; background-color: green;"
+                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">PYTHON</div>
+                </div>
+
+                <div class="progress mb-3">
+                    <div class="progress-bar" role="progressbar" style="width: 30%; background-color: cornflowerblue;"
+                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">HTML/CSS</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 專案 -->
+        <section id="projects" class="pt-5">
+            <div class="container">
+                <h2 class="topic text-center">專案作品</h2>
+
+                <!-- 使用 Tab 來分不同頁面 -->
+                <div class="d-flex justify-content-center pt-3">
+                    <ul class="nav nav-tabs" id="myTabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="web-tab" data-toggle="tab" href="#web">Web</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="mobile-tab" data-toggle="tab" href="#mobile">Mobile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="other-tab" data-toggle="tab" href="#other">Other</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Tab 內容 -->
+                <div class="d-flex justify-content-center tab-content mt-3">
+                    <div class="tab-pane fade show active" id="web">
+                        <p>這裡是 Web 專案的介紹。</p>
+                        <!-- 放置 Web 專案的內容 -->
+                    </div>
+                    <div class="tab-pane fade" id="mobile">
+                        <p>這裡是 Mobile 專案的介紹。</p>
+                        <!-- 放置 Mobile 專案的內容 -->
+                    </div>
+                    <div class="tab-pane fade" id="other">
+                        <p>這裡是其他專案的介紹。</p>
+                        <!-- 放置其他專案的內容 -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 聯絡我 -->
+        <section id="contact" class="pt-5">
+            <div class="container">
+                <h2 class="topic text-center">聯絡我</h2>
+
+                <div class="position-relative d-flex">
+                    <!-- 左側 -->
+                    <div class="social-links mt-5">
+                        <h4 class="text-start">我的社群連結</h4>
+
+                        <!-- 聯絡方式連結 -->
+                        <div class="">
+                            <!-- <svg viewBox="0 0 104 24" aria-label="github icon" class="w-9" astro-icon="mdi:github">
+                                <path fill="currentColor"
+                                    d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z">
+                                </path>
+                            </svg> -->
+                        </div>
+
+                        <h4 class="text-start" style="margin-top: 5rem;">歡迎向我提供意見!</h4>
+                    </div>
+
+                    <!-- 右側form group -->
+                    <div class="form-group mt-5">
+                        <form class="pt-3">
+                            <div class="position-relative mb-3">
+                                <i class="fa fa-user icon"></i>
+                                <input type="text" class="form-control" id="name" placeholder="姓名">
+                            </div>
+                            <div class="position-relative mb-3">
+                                <i class="fa fa-envelope icon"></i>
+                                <input type="email" class="form-control" id="email" placeholder="電子郵件">
+                            </div>
+                            <div class="position-relative mb-3">
+                                <i class="fa fa-comment icon"></i>
+                                <textarea name="textarea" rows="4" placeholder="內容"></textarea>
+                            </div>
+
+                            <!-- button -->
+                            <div class="btn-group d-flex justify-content-end">
+                                <button type="reset" class="reset-btn mr-3">重設</button>
+                                <button type="submit" class="submit-btn">送出</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </div>
+
+    <!-- 頁腳 -->
+    <footer class="py-2 footer-custom">
+        <div class="text-center" style="color: #ffffff;">
+            <p>Copyright 2024 © Paul Yao</p>
+        </div>
+    </footer>
+
+
+
+    <!-- 引入Bootstrap的JavaScript，通常放在body標籤底部 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- 引入 jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- 滑動動畫 -->
+    <script>
+        $(document).ready(function () {
+            // 當選項被點擊時
+            $('.navbar-nav a').on('click', function (e) {
+                // 阻止默認行為
+                e.preventDefault();
+
+                // 取得目標錨點的 ID
+                var targetId = $(this).attr('href');
+
+                // 使用 animate 實現滑動動畫
+                $('html, body').animate({
+                    scrollTop: $(targetId).offset().top
+                }, 500); // 1000 毫秒為動畫時間
+            });
+        });
+    </script>
+
+</body>
+
+</html>
