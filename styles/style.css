@@ -59,7 +59,7 @@ a {
 
 .navbar-custom {
 	background-color: #343434;
-	border: 8px solid #87a96b;
+	border: solid #87a96b;
 	border-width: 8px 0px 0px 0px;
 	/*上右下左*/
 }
