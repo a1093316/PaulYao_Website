@@ -15,44 +15,47 @@
 
 <body>
     <!-- 導覽欄 -->
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-        <div class="container-fluid p-0 pt-2 position-relative">
-            <!-- 左上logo圖 -->
-            <a class="position-absolute sticky-top" href="#">
-                <img src="./asset/logo.jpg" class="img-fluid" alt="About" width="50" height="50">
-            </a>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid p-0 pt-2 position-relative">
+                <!-- 左上logo圖 -->
+                <a class="position-absolute sticky-top" href="#">
+                    <img src="./asset/logo.jpg" class="img-fluid" alt="About" width="50" height="50">
+                </a>
 
-            <!-- 右上深淺模式按鈕 -->
-            <!-- <button id="darkModeToggle" class="darkModeBtn position-absolute end-0">
-                Toggle
-            </button> -->
+                <!-- 右上深淺模式按鈕 -->
+                <!-- <button id="darkModeToggle" class="darkModeBtn position-absolute end-0">
+                    Toggle
+                </button> -->
 
 
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <!-- collapse navbar-collapse text-center -->
-            <div class="collapse navbar-collapse text-center" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item mr-2 ml-2">
-                        <a class="nav-link" href="#about">關於我</a>
-                    </li>
-                    <li class="nav-item mr-2 ml-2">
-                        <a class="nav-link" href="#skills">技能</a>
-                    </li>
-                    <li class="nav-item mr-2 ml-2">
-                        <a class="nav-link" href="#projects">專案</a>
-                    </li>
-                    <li class="nav-item mr-2 ml-2">
-                        <a class="nav-link" href="#contact">聯絡我</a>
-                    </li>
-                </ul>
+                <!-- collapse navbar-collapse text-center -->
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mr-2 ml-2">
+                            <a class="nav-link" href="#about">關於我</a>
+                        </li>
+                        <li class="nav-item mr-2 ml-2">
+                            <a class="nav-link" href="#skills">技能</a>
+                        </li>
+                        <li class="nav-item mr-2 ml-2">
+                            <a class="nav-link" href="#projects">專案</a>
+                        </li>
+                        <li class="nav-item mr-2 ml-2">
+                            <a class="nav-link" href="#contact">聯絡我</a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
+        </nav>
+    </div>
 
-        </div>
-    </nav>
 
     <div class="content-wrap">
         <!-- 首頁部分 -->
@@ -197,7 +200,8 @@
                             </div>
                             <div class="position-relative mb-3">
                                 <i class="fa fa-comment icon"></i>
-                                <textarea name="textarea" rows="4" placeholder="內容" style="max-width: 100%; min-width: 100%;"></textarea>
+                                <textarea name="textarea" rows="4" placeholder="內容"
+                                    style="max-width: 100%; min-width: 100%;"></textarea>
                             </div>
 
                             <!-- button -->
@@ -208,15 +212,12 @@
                         </form>
                     </div>
                 </div>
-
-
-
             </div>
         </section>
     </div>
 
     <!-- 頁腳 -->
-    <footer class="py-2 footer-custom">
+    <footer class="py-3 footer-custom">
         <div class="text-center" style="color: #ffffff;">
             <p>Copyright 2024 © Paul Yao</p>
         </div>
