@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Paul Yao | Personal Website</title>
-    <link rel="icon" href="./asset/logo.jpg" />
+    <link rel="icon" href="./asset/website-icon.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- 你的自定義CSS樣式表可以在這裡引入 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/style.css">
-
 </head>
 
 <body>
@@ -20,7 +19,9 @@
             <div class="container-fluid p-0 pt-2 position-relative">
                 <!-- 左上logo圖 -->
                 <a class="position-absolute sticky-top" href="#">
-                    <img src="./asset/logo.jpg" class="img-fluid" alt="About" width="50" height="50">
+                    <div class="logo-background">
+                        <h3>PY</h3>
+                    </div>
                 </a>
 
                 <!-- 右上深淺模式按鈕 -->
@@ -61,11 +62,10 @@
 
         <!-- 往上按鈕 -->
         <a href="#">
-            <button type="submit" class="btn-back-to-top">
+            <button class="btn-back-to-top" id="back-top">
                 <i class="fa fa-arrow-up"></i>
             </button>
         </a>
-
 
         <!-- 首頁部分 -->
         <section id="home" class="home" style="background-image: url('./asset/bg-home.png'); 
@@ -306,7 +306,11 @@
     <!-- 引入 jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- 滑動動畫 -->
+    <!-- js -->
+    <script src="./styles/script.js"></script>
+
+
+    <!-- 點擊nav-item的滑動動畫
     <script>
         $(document).ready(function () {
             // 當選項被點擊時
@@ -323,7 +327,8 @@
                 }, 500); // 1000 毫秒為動畫時間
             });
         });
-    </script>
+    </script> -->
+
 
 </body>
 
