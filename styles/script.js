@@ -27,3 +27,53 @@
 //     });
 // });
 
+// 點擊nav-item的滑動動畫 
+$(document).ready(function () {
+    // 當選項被點擊時
+    $('.navbar-nav a').on('click', function (e) {
+        // 阻止默認行為
+        e.preventDefault();
+
+        // 取得目標錨點的 ID
+        var targetId = $(this).attr('href');
+
+        // 使用 animate 實現滑動動畫
+        $('html, body').animate({
+            scrollTop: $(targetId).offset().top
+        }, 500); // 1000 毫秒為動畫時間
+    });
+});
+
+
+// 回到頁面頂端按鈕的滑動動畫
+$(document).ready(function () {
+
+
+    $("h1").delay("1000").fadeIn();
+
+
+    // hide #back-top first
+    $("#back-top").hide();
+
+
+    // fade in #back-top
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#back-top').fadeIn();
+            } else {
+                $('#back-top').fadeOut();
+
+            }
+        });
+
+
+        // scroll body to 0px on click
+        $('#back-top').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 500);
+            return false;
+        });
+    });
+});
