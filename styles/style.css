@@ -293,7 +293,7 @@ textarea {
 	justify-content: start;
 }
 
-@media (width < 900px) {
+@media (width < 1000px) {
 	.project {
 		grid-template-columns: repeat(1, 1fr);
 	}
